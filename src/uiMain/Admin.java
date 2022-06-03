@@ -1,5 +1,6 @@
 // CLASE ADMIN PARA LA INTERACCION DEL USUARIO CON EL SISTEMA
-// AUTORES: JERONIMO SALAZAR, ALVARO GUERRERO, ESTEBAN ACOSTA, KAREN RIVERA
+//generación de tiquet
+
 package uiMain;
 
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ public class Admin {
 		
 		Viaje viaje1C = new Viaje(001, 300000, "Monteria", "Bogota", Bus_1, 214.88, "12-10-2022", "14:00");
 		Viaje viaje2C = new Viaje(002, 320000, "Monteria", "Bogota", Bus_2, 214.88, "31-11-2022", "16:00");
-		Viaje viaje3C = new Viaje(003,1780000,"Monteria","Villa",Buseta_1,8017,"11-12-2022","05:00");
+		Viaje viaje3C = new Viaje(003,17000,"Monteria","Pica Pica",Buseta_1,8017,"11-12-2022","05:00");
 		Viaje viaje4C = new Viaje(004,230000,"Pasto","Monteria",Buseta_2,1039,"24-12-2022","12:00");
 		Viaje viaje5C = new Viaje(005,132000,"Medellin","Cartagena",Bus_3,973,"13-11-2022","07:00");
 		Viaje viaje6C = new Viaje(006,1320000,"Monteria","Leticia",Bus_4,774,"29-10-2022","16:00");

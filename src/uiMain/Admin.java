@@ -16,19 +16,19 @@ public class Admin {
 	static GeneradorDeTablas generadorDeTablas = new TablasConsola();
 
 	public static void main(String[] args) {	
-		Transportadora Torcomora = new Transportadora("Torcomora");		
-		Bus Bus_1 = new Bus("VGS-279",Torcomora);
-		Bus Bus_2 = new Bus("AJPH-777",Torcomora);
-		Bus Bus_3 = new Bus("ET-800", Torcomora);
-		Bus Bus_4 = new Bus("JKL-690",Torcomora);
-		Bus Bus_5 = new Bus("MN-777",Torcomora);
-		Buseta Buseta_1 = new Buseta("RRR-120",Torcomora);
-		Buseta Buseta_2 = new Buseta("JMSD-80",Torcomora);
+		Transportadora Torcoroma = new Transportadora("Torcoroma");		
+		Bus Bus_1 = new Bus("VGS-279",Torcoroma);
+		Bus Bus_2 = new Bus("AJPH-777",Torcoroma);
+		Bus Bus_3 = new Bus("JMS-800", Torcoroma);
+		Bus Bus_4 = new Bus("CAM-690",Torcoroma);
+		Bus Bus_5 = new Bus("ABC-777",Torcoroma);
+		Buseta Buseta_1 = new Buseta("XYZ-120",Torcoroma);
+		Buseta Buseta_2 = new Buseta("ACT-80",Torcoroma);
 		
-		Viaje viaje1C = new Viaje(001, 300000, "Monteria", "Bogota", Bus_1, 214.88, "12-10-2022", "14:00");
-		Viaje viaje2C = new Viaje(002, 320000, "Monteria", "Bogota", Bus_2, 214.88, "31-11-2022", "16:00");
+		Viaje viaje1C = new Viaje(001, 180000, "Monteria", "Bogota", Bus_1, 214.88, "12-10-2022", "14:00");
+		Viaje viaje2C = new Viaje(002, 320000, "Montegrande", "Bogota", Bus_2, 216.88, "31-11-2022", "16:00");
 		Viaje viaje3C = new Viaje(003,17000,"Monteria","Pica Pica",Buseta_1,8017,"11-12-2022","05:00");
-		Viaje viaje4C = new Viaje(004,23000,"Pasto","Monteria",Buseta_2,1039,"24-12-2022","12:00");
+		Viaje viaje4C = new Viaje(004,23000,"Pilarica","Caracoles",Buseta_2,1039,"24-12-2022","12:00");
 		Viaje viaje5C = new Viaje(005,13200,"Pueblo Loco","El Carmen",Bus_3,973,"13-11-2022","07:00");
 		Viaje viaje6C = new Viaje(006,13200,"Carrizal","Pueblita",Bus_4,774,"29-10-2022","16:00");
 		Viaje viaje7C = new Viaje(077,65000,"Montelibano","Medellín",Bus_4,233,"06-10-2022","13:00");
@@ -163,7 +163,7 @@ public class Admin {
 		
 		int opcion;
 		do {
-			System.out.println("---- TERMINAL TRANSPORTE MONTELIVANO ---");
+			System.out.println("---- TERMINAL TRANSPORTE CÓRDOBA  ---");
 			System.out.println("1. Administrador");
 			System.out.println("2. Comprar tiquete para un viaje por destino y fecha");
 			System.out.println("3. Agregar hospedaje en el destino del viaje");
@@ -543,7 +543,7 @@ public class Admin {
 			Bus bus = new Bus(nombreBus, Transportadora.buscarTransportadoraPorNombre(nombreTransportadora));
 			Viaje viaje = new Viaje(iD, precio, origen, destino, bus, distancia, fechaSalida, horaSalida);
 			System.out.println("");
-			System.out.println("SU VIAJE SE HA REGISTRADO CORRECTAMENTE");
+			System.out.println("SU VIAJE SE HA REGISTRADO CORRECTAMENTE,GRACIAS POR HACERNOS PARTE DE TU VIAJE ");
 			System.out.println("\n");
 
 		} else if (terrestre == 2) {

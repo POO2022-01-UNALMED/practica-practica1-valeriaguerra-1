@@ -1,7 +1,7 @@
 package gestortaller;
 public enum Clase {
 
-	ECONOMICA(10000),EJECUTIVA(70000);
+	ECONOMICA(10000),EJECUTIVA(500000);
 
 	private int precio;
 

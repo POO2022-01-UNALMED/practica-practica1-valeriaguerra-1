@@ -1,5 +1,4 @@
-// CLASE ADMIN PARA LA INTERACCION DEL USUARIO CON EL SISTEMA
-//generación de tiquet
+
 
 package uiMain;
 
@@ -29,25 +28,25 @@ public class Admin {
 		Viaje viaje1C = new Viaje(001, 300000, "Monteria", "Bogota", Bus_1, 214.88, "12-10-2022", "14:00");
 		Viaje viaje2C = new Viaje(002, 320000, "Monteria", "Bogota", Bus_2, 214.88, "31-11-2022", "16:00");
 		Viaje viaje3C = new Viaje(003,17000,"Monteria","Pica Pica",Buseta_1,8017,"11-12-2022","05:00");
-		Viaje viaje4C = new Viaje(004,230000,"Pasto","Monteria",Buseta_2,1039,"24-12-2022","12:00");
-		Viaje viaje5C = new Viaje(005,132000,"Medellin","Cartagena",Bus_3,973,"13-11-2022","07:00");
-		Viaje viaje6C = new Viaje(006,1320000,"Monteria","Leticia",Bus_4,774,"29-10-2022","16:00");
-		Viaje viaje7C = new Viaje(0077,290000,"Monteria","Bogota",Bus_4,233,"06-10-2022","13:00");
+		Viaje viaje4C = new Viaje(004,23000,"Pasto","Monteria",Buseta_2,1039,"24-12-2022","12:00");
+		Viaje viaje5C = new Viaje(005,13200,"Pueblo Loco","El Carmen",Bus_3,973,"13-11-2022","07:00");
+		Viaje viaje6C = new Viaje(006,13200,"Carrizal","Pueblita",Bus_4,774,"29-10-2022","16:00");
+		Viaje viaje7C = new Viaje(077,65000,"Montelibano","Medellín",Bus_4,233,"06-10-2022","13:00");
 		
 		Tiquete tiquete1C1 = new Tiquete(564, viaje1C.getPrecio(), viaje1C);
 		Tiquete tiquete2C1 = new Tiquete(286, viaje1C.getPrecio(), viaje1C);
 		Tiquete tiquete3C1 = new Tiquete(124, viaje1C.getPrecio(), viaje1C);
 		Pasajero pasajero1C1 = new Pasajero( "AS1234", "Armando", tiquete1C1, 32, "Armando123@yahoo.es");
-		Pasajero pasajero2C1 = new Pasajero( "AS2463", "Clara", tiquete2C1, 28, "ClaraLuna@gmail.com");
-		Pasajero pasajero3C1 = new Pasajero( "BS2145", "Ana", tiquete3C1, 4, "ClaraLuna@gmail.com");
+		Pasajero pasajero2C1 = new Pasajero( "AS2463", "Valeria", tiquete2C1, 28, "Valeria@gmail.com");
+		Pasajero pasajero3C1 = new Pasajero( "BS2145", "Pipe", tiquete3C1, 4, "Pipe@gmail.com");
 		tiquete1C1.setSilla(Bus_1.getSILLASEJECUTIVAS()[1]);
 		tiquete2C1.setSilla(Bus_1.getSILLASEJECUTIVAS()[2]);
 		tiquete3C1.setSilla(Bus_1.getSILLASEJECUTIVAS()[3]);
 		
 		Tiquete tiquete1C3 = new Tiquete(287, viaje3C.getPrecio(), viaje3C);
 		Tiquete tiquete2C3 = new Tiquete(283, viaje3C.getPrecio(), viaje3C);
-		Pasajero pasajero1C3 = new Pasajero( "AS1111", "Vanessa", tiquete1C3, 18, "VanessaG@gmail.com");
-		Pasajero pasajero2C3 = new Pasajero( "CS1259", "Sara", tiquete2C3, 19, "SaraGeo@gmail.com");
+		Pasajero pasajero1C3 = new Pasajero( "AS1111", "Jaime", tiquete1C3, 18, "JaimeG@gmail.com");
+		Pasajero pasajero2C3 = new Pasajero( "CS1259", "Pablo", tiquete2C3, 19, "Pablo@gmail.com");
 		
 		Tiquete tiquete1C4 = new Tiquete(441, viaje4C.getPrecio(), viaje4C);
 		Pasajero pasajero1C4 = new Pasajero("AB7632","Sandra",tiquete1C4,36,"sandra123@gmail.com");
@@ -56,27 +55,27 @@ public class Admin {
 		Tiquete tiquete1C7 = new Tiquete(661, viaje7C.getPrecio(), viaje7C);
 		Tiquete tiquete2C7 = new Tiquete(662, viaje7C.getPrecio(), viaje7C);
 		Tiquete tiquete3C7 = new Tiquete(663, viaje7C.getPrecio(), viaje7C);
-		Pasajero pasajero1C7 = new Pasajero( "AS1254", "Alfonso", tiquete1C7, 32, "Alfonso123@yahoo.es");
-		Pasajero pasajero2C7 = new Pasajero( "AS2433", "Carlos", tiquete2C7, 25, "carlos43@gmail.com");
-		Pasajero pasajero3C7 = new Pasajero( "BS2143", "David", tiquete3C7, 14, "carlos43@gmail.com");
+		Pasajero pasajero1C7 = new Pasajero( "AS1254", "Juliam", tiquete1C7, 32, "Julian123@yahoo.es");
+		Pasajero pasajero2C7 = new Pasajero( "AS2433", "Caraolina", tiquete2C7, 25, "carlolina43@gmail.com");
+		Pasajero pasajero3C7 = new Pasajero( "BS2143", "Diego", tiquete3C7, 14, "Diego43@gmail.com");
 		tiquete1C7.setSilla(Bus_5.getSILLASEJECUTIVAS()[1]);
 		tiquete2C7.setSilla(Bus_5.getSILLASEJECUTIVAS()[2]);
 		tiquete3C7.setSilla(Bus_5.getSILLASEJECUTIVAS()[3]);
 		
 		
-		Transportadora Montrapi = new Transportadora("Montrapi");
+		Transportadora Montesinu = new Transportadora("Montesinu");
 	
-		Bus bus1A = new Bus("ArbusA330", Montrapi);
-		Bus bus2A = new Bus("ATR72", Montrapi);
-		Buseta buseta1A = new Buseta("fdsfasdf 787", Montrapi);
-		Buseta buseta2A = new Buseta("Cessna120", Montrapi);
-		Buseta buseta3A = new Buseta("Cessna172", Montrapi);
+		Bus bus1A = new Bus("ArbusA330",Montesinu);
+		Bus bus2A = new Bus("ATR72",Montesinu);
+		Buseta buseta1A = new Buseta("fdsfasdf 787", Montesinu);
+		Buseta buseta2A = new Buseta("Cessna120", Montesinu);
+		Buseta buseta3A = new Buseta("Cessna172", Montesinu);
 		
 		Viaje viaje1A = new Viaje(213, 200000, "Cartago", "Cartagena", buseta1A, 473.22, "15-10-2022", "15:00");
-		Viaje viaje2A= new Viaje(214, 1680000, "Monteria", "Cali",  bus1A, 8033.74, "11-12-2022", "17:00");
-		Viaje viaje3A = new Viaje(215, 280000, "Monteria", "Bogota", bus2A, 214.88, "17-12-2022", "16:00");
-		Viaje viaje4A = new Viaje(213, 495000, "Bucaramanga", "Cartagena", buseta2A, 773, "30-11-2022", "06:00");
-		Viaje viaje5A = new Viaje(216, 648000, "Medellin", "Chucurri", buseta3A, 1039, "15-10-2022", "10:00");
+		Viaje viaje2A= new Viaje(214, 16800, "Monteria", "Palotal",  bus1A, 8033.74, "11-12-2022", "17:00");
+		Viaje viaje3A = new Viaje(215, 28000, "Monteria", "Bogota", bus2A, 214.88, "17-12-2022", "16:00");
+		Viaje viaje4A = new Viaje(213, 49500, "Binomio", "Corasolito", buseta2A, 773, "30-11-2022", "06:00");
+		Viaje viaje5A = new Viaje(216, 64800, "Junta", "Carito", buseta3A, 1039, "15-10-2022", "10:00");
 		
 		Tiquete tiquete1A1 = new Tiquete(442, viaje1A.getPrecio(), viaje1A);
 		Tiquete tiquete2A1 = new Tiquete(443, viaje1A.getPrecio(), viaje1A);
@@ -99,21 +98,21 @@ public class Admin {
 		tiquete3A4.setSilla(buseta2A.getSILLASEJECUTIVAS()[3]);
 	
 		
-		Transportadora Velozn = new Transportadora("Velozn");
+		Transportadora Coonorte = new Transportadora("Coonorte");
 		
-		Bus bus1H = new Bus("Boeing737", Velozn);
-		Bus bus2H = new Bus("PilatusPC-6", Velozn);
-		Bus bus3H = new Bus("AirbusA350", Velozn);
-		Bus bus4H = new Bus("AirbusA380", Velozn);
-		Bus bus5H = new Bus("Boeing777", Velozn);
-		Buseta buseta1H = new Buseta("Cessna",Velozn);
+		Bus bus1H = new Bus("elmar737", Coonorte);
+		Bus bus2H = new Bus("Transcaribe", Coonorte);
+		Bus bus3H = new Bus("transbusA350", Coonorte);
+		Bus bus4H = new Bus("transbusA380", Coonorte);
+		Bus bus5H = new Bus("Boeing777", Coonorte);
+		Buseta buseta1H = new Buseta("Cessna",Coonorte);
 		
-		Viaje viaje1H = new Viaje(329,1500000,"Medellin","SanAndres",bus1H,8806,"13-11-2022","15:00");
-		Viaje viaje2H = new Viaje(328,1500000,"Cartagena","Cali",bus2H,773,"13-10-2022","11:00");
-		Viaje viaje3H = new Viaje(327,1500000,"Medellin","Pasto",bus3H,731,"13-12-2022","08:00");
-		Viaje viaje4H = new Viaje(326,1500000,"Rionegro", "Bogota",bus4H,214.88,"31-11-2022","07:00");
-		Viaje viaje5H = new Viaje(325,1500000,"Medellin","Amazonas",bus5H,1792,"12-12-2022","17:00");
-		Viaje viaje6H = new Viaje(324,1500000,"Amazonas","Cali",buseta1H,774,"13-11-2022","13:00");
+		Viaje viaje1H = new Viaje(329,15000,"Moñito","Bagre",bus1H,8806,"13-11-2022","15:00");
+		Viaje viaje2H = new Viaje(328,18000,"Curamba","Cañito",bus2H,773,"13-10-2022","11:00");
+		Viaje viaje3H = new Viaje(327,15000,"Montelibano","tierra grata",bus3H,731,"13-12-2022","08:00");
+		Viaje viaje4H = new Viaje(326,17000,"Boca grande", "Briseño",bus4H,214.88,"31-11-2022","07:00");
+		Viaje viaje5H = new Viaje(325,19700,"Corina Uribe","AguasDelMar",bus5H,1792,"12-12-2022","17:00");
+		Viaje viaje6H = new Viaje(324,15000,"Amaurí","Calazan",buseta1H,774,"13-11-2022","13:00");
 		
 		
 		Tiquete tiquete5H6 = new Tiquete(563, viaje6H.getPrecio(), viaje6H);

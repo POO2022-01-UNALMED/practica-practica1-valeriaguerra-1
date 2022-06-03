@@ -81,13 +81,13 @@ public class Viaje implements Serializable{
 		this.destino = destino;
 	}
 
-	//CORREGIR CUANDO SE TENGA LA CLASE ABSTRACTA
+	//mirar la clase abstracta se organiza 
 	public Terrestre getTerrestre() {
 		return terrestre;
 	}
 
-	public void setAeronave(Terrestre aeronave) {
-		this.terrestre = aeronave;
+	public void setAeronave(Terrestre terrestre) {
+		this.terrestre = terrestre;
 	}
 
 	public double getDistancia_en_km() {

@@ -1,9 +1,8 @@
 package gestorviajes;
-import java.io.Serializable;
+
 import java.util.ArrayList;
 
 import gestortaller.*;
-public class Transportadora implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	
@@ -179,5 +178,5 @@ public class Transportadora implements Serializable{
 
 	public static void setTransportadoras(ArrayList<Transportadora> transportadoras) {
 		Transportadora.transportadoras = transportadoras;
-	}
+	
 }

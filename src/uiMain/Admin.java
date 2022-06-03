@@ -18,12 +18,12 @@ public class Admin {
 	public static void main(String[] args) {	
 		Transportadora Torcomora = new Transportadora("Torcomora");		
 		Bus Bus_1 = new Bus("VGS-279",Torcomora);
-		Bus Bus_2 = new Bus("D-777",Torcomora);
-		Bus Bus_3 = new Bus("GHI-800", Torcomora);
+		Bus Bus_2 = new Bus("AJPH-777",Torcomora);
+		Bus Bus_3 = new Bus("ET-800", Torcomora);
 		Bus Bus_4 = new Bus("JKL-690",Torcomora);
-		Bus Bus_5 = new Bus("MN�-777",Torcomora);
-		Buseta Buseta_1 = new Buseta("XXX-120",Torcomora);
-		Buseta Buseta_2 = new Buseta("MDG-80",Torcomora);
+		Bus Bus_5 = new Bus("MN-777",Torcomora);
+		Buseta Buseta_1 = new Buseta("RRR-120",Torcomora);
+		Buseta Buseta_2 = new Buseta("JMSD-80",Torcomora);
 		
 		Viaje viaje1C = new Viaje(001, 300000, "Monteria", "Bogota", Bus_1, 214.88, "12-10-2022", "14:00");
 		Viaje viaje2C = new Viaje(002, 320000, "Monteria", "Bogota", Bus_2, 214.88, "31-11-2022", "16:00");
@@ -80,9 +80,9 @@ public class Admin {
 		Tiquete tiquete1A1 = new Tiquete(442, viaje1A.getPrecio(), viaje1A);
 		Tiquete tiquete2A1 = new Tiquete(443, viaje1A.getPrecio(), viaje1A);
 		Tiquete tiquete3A1 = new Tiquete(447, viaje1A.getPrecio(), viaje1A);
-		Pasajero pasajero1A1 = new Pasajero( "AS4234", "Alison", tiquete1A1, 32, "alison56@yahoo.es");
-		Pasajero pasajero2A1 = new Pasajero( "AS5463", "Estiven", tiquete2A1, 11, "estiven@gmail.com");
-		Pasajero pasajero3A1 = new Pasajero( "BS7145", "Camilo", tiquete3A1, 3, "alison56@gmail.com");
+		Pasajero pasajero1A1 = new Pasajero( "AS4234", "Aleja", tiquete1A1, 32, "Aleja78@yahoo.es");
+		Pasajero pasajero2A1 = new Pasajero( "AS5463", "Zocorro", tiquete2A1, 11, "Zocorro@gmail.com");
+		Pasajero pasajero3A1 = new Pasajero( "BS7145", "Camilo", tiquete3A1, 3, "Cami56@gmail.com");
 		tiquete1A1.setSilla(buseta1A.getSILLASEJECUTIVAS()[1]);
 		tiquete2A1.setSilla(buseta1A.getSILLASEJECUTIVAS()[2]);
 		tiquete3A1.setSilla(buseta1A.getSILLASEJECUTIVAS()[3]);
@@ -552,9 +552,9 @@ public class Admin {
 			System.out.println();
 			Buseta buseta = new Buseta(nombreBuseta, Transportadora.buscarTransportadoraPorNombre(nombreTransportadora));
 			Viaje viaje= new Viaje(iD, precio, origen, destino, buseta, distancia, fechaSalida, horaSalida);
-			System.out.println("***************************************");
+			System.out.println("");
 			System.out.println("SU VIAJE SE HA REGISTRADO CORRECTAMENTE");
-			System.out.println("***************************************\n");
+			System.out.println("\n");
 		} else {
 			System.out.println("No manejamos ese tipo de vehiculo");
 		}

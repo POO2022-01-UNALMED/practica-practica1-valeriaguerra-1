@@ -73,7 +73,7 @@ public class Admin {
 		
 		Viaje viaje1A = new Viaje(213, 200000, "Cartago", "Cartagena", buseta1A, 473.22, "15-10-2022", "15:00");
 		Viaje viaje2A= new Viaje(214, 16800, "Monteria", "Palotal",  bus1A, 8033.74, "11-12-2022", "17:00");
-		Viaje viaje3A = new Viaje(215, 28000, "Monteria", "Bogota", bus2A, 214.88, "17-12-2022", "16:00");
+		Viaje viaje3A = new Viaje(215, 280000, "Monteria", "Bogota", bus2A, 214.88, "17-12-2022", "16:00");
 		Viaje viaje4A = new Viaje(213, 49500, "Binomio", "Corasolito", buseta2A, 773, "30-11-2022", "06:00");
 		Viaje viaje5A = new Viaje(216, 64800, "Junta", "Carito", buseta3A, 1039, "15-10-2022", "10:00");
 		
@@ -129,10 +129,10 @@ public class Admin {
 		Tiquete tiquete2H6 = new Tiquete(552,viaje6H.getPrecio(),viaje6H);
 		Tiquete tiquete3H6 = new Tiquete(553,viaje6H.getPrecio(),viaje6H);
 		Tiquete tiquete4H6 = new Tiquete(554,viaje6H.getPrecio(),viaje6H);
-		Pasajero pasajero1H6 = new Pasajero("ABC111","Adolfo",tiquete1H6,18,"adolfo@gmail.com");
-		Pasajero pasajero2H6 = new Pasajero("ABC112","Veronica",tiquete2H6,21,"veronica@gmail.com");
-		Pasajero pasajero3H6 = new Pasajero("ABC113","Sebastian",tiquete3H6,22,"sebastian@gmail.com");
-		Pasajero pasajero4H6 = new Pasajero("ABC114","Katherine",tiquete4H6,25,"katherine@gmail.com");
+		Pasajero pasajero1H6 = new Pasajero("ABC111","Maria",tiquete1H6,18,"Maria@gmail.com");
+		Pasajero pasajero2H6 = new Pasajero("ABC112","Ivan",tiquete2H6,21,"Ivan@gmail.com");
+		Pasajero pasajero3H6 = new Pasajero("ABC113","Samuel",tiquete3H6,22,"samuel@gmail.com");
+		Pasajero pasajero4H6 = new Pasajero("ABC114","Karina",tiquete4H6,25,"karina@gmail.com");
 		tiquete1H6.setSilla(buseta1H.getSILLASEJECUTIVAS()[0]);
 		tiquete2H6.setSilla(buseta1H.getSILLASEJECUTIVAS()[1]);
 		tiquete3H6.setSilla(buseta1H.getSILLASEJECUTIVAS()[2]);
@@ -152,10 +152,10 @@ public class Admin {
 		Hospedaje hospedaje2 = new Hospedaje("Las Margaras", "San Pelayo", 215000, 5);
 		Hospedaje hospedaje3 = new Hospedaje("HouseCampero", "Caucasia", 30079, 2);
 		Hospedaje hospedaje4 = new Hospedaje("Viajero", "Puerto Escondido", 66000, 4);
-		Hospedaje hospedaje5 = new Hospedaje("Bocagrande", "Cartagena", 167270, 4);
-		Hospedaje hospedaje6 = new Hospedaje("BellaMar", "Cartagena", 74029, 3);
-		Hospedaje hospedaje7 = new Hospedaje("Ibis", "Cali", 155000, 5);
-		Hospedaje hospedaje8 = new Hospedaje("Estelar", "Cartagena", 346378, 5);
+		Hospedaje hospedaje5 = new Hospedaje("Bocaito", "Pica Pica", 167270, 4);
+		Hospedaje hospedaje6 = new Hospedaje("Lasolas", "", 74029, 3);
+		Hospedaje hospedaje7 = new Hospedaje("Imperium", "Bogota", 155000, 5);
+		Hospedaje hospedaje8 = new Hospedaje("La Fonda", "", 346378, 5);
 		Hospedaje hospedaje9 = new Hospedaje("SeaAvenue", "SanAndres", 472388, 5);
 		Hospedaje hospedaje10 = new Hospedaje("Ataraxy", "SanAndres", 280795, 4);
 		Hospedaje hospedaje11 = new Hospedaje("SolCaribe", "SanAndres", 105000, 3);
